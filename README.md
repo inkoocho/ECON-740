@@ -2,10 +2,11 @@
 
 Matlab and Julia code repositories for ECON 777 class
 
-## 1. Gresham folder 
+## 1. Gresham codes 
 The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.aeaweb.org/articles?id=10.1257/aer.20160665).
 
-
+- `gresham4_matlab_forparallel.m`
+    - Matlab function script that generates sample paths of $\pi$
 
 ## 2. Monthly stock data (crsp_m.csv)
 ```
