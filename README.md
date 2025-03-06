@@ -18,34 +18,10 @@ The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.a
     - Parallel execustion code of `gresham4_julia_function.jl` on the **cluster**.
     - Can be executed using the shell file `gresham4_slurm.sh`.
 
-## 2. Monthly stock data (crsp_m.csv)
-```
-/* Selected variables from the CRSP monthly data file (crsp.msf)  */
-%let msfvars = prc ret shrout cfacpr cfacshr;
+## 2. Duopoly codes
+The Matlab and Julia codes are based on [this paper]()
 
-/* Selected variables from the CRSP monthly event file (crsp.mse) */
-%let msevars = ncusip exchcd shrcd ;
-
-/* This procedure creates a Monthly CRSP dataset named “CRSP_M”   */
-%crspmerge(s=m,start=&begdate,end=&enddate,sfvars=&msfvars,sevars=&msevars,filters=&sfilter);
-
-data crsp_m; format qdate YYMMDD10.; format mdate YYMMDD10.;
-set crsp_m;
-	WHERE shrout >0;
-	qdate = INTNX('QTR',date,0,'E');
-	mdate = INTNX("MONTH",date,0,"E");
-	price = abs(prc)/cfacpr;
-	shares_out = shrout*cfacshr*1000;
-	if shares_out<=0 then shares_out=.;
-	market_cap = price*shares_out/1000000;
-	label price = "Price at Period End, Adjusted";
-	label shares_out = "Total Shares Outstanding, Adjusted";
-	label market_cap = "Market Capitalization, x$1m";
-	drop prc cfacpr shrout shrcd;
-run;
-```
-
-## 3. Quarterly 13F holdings data (13f_holding.csv & 13f_asset.csv)
+## 3. Compete codes
 ```
 libname tfn1 "/wrds/tfn/sasdata/s34";
 libname tfn2 "/wrds/tfn/sasdata/s12";
