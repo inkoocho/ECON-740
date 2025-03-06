@@ -32,10 +32,10 @@ function gresham4_julia_function(Titer,alpha,rho,sigmap,sigmaf,sigmab)
     
     vp = sqrt(sigmap) * randn(Titer);
     vf = sqrt(sigmaf) * randn(Titer);
-    g = sqrt(sigmab * sigmaf) / sqrt(sigmap * (1 - rho^9));
-    varbeta = (g * sigmap) / (sigmaf * (1 - alpha) * (2 - g * (1 - alpha)));
-    varf = sigmaf / (1 - rho^2);
-    varratio = 100 * (varbeta * varf) / (varf * sce^2 + sigmap);
+    #g = sqrt(sigmab * sigmaf) / sqrt(sigmap * (1 - rho^9));
+    #varbeta = (g * sigmap) / (sigmaf * (1 - alpha) * (2 - g * (1 - alpha)));
+    #varf = sigmaf / (1 - rho^2);
+    #varratio = 100 * (varbeta * varf) / (varf * sce^2 + sigmap);
     
     price = zeros(Titer);
     f = zeros(Titer);

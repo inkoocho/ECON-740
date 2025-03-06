@@ -7,6 +7,13 @@ The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.a
 
 - `gresham4_matlab_forparallel.m`
     - Matlab function script that generates sample paths of $\pi_t$, $\beta_t(0)$, $\beta_t(1)$, $p_t$
+- `gresham4_julia_function.jl`
+    - Julia function script translated from `gresham4_matlab_forparallel.m`.
+    - It is slightly modified to have parameters as inputs
+- `gresham4_parallel.jl`
+    - Parallel execution code of `gresham4_julia_function.jl` on your **local** computer.
+    - Adjust 'num_cores' depending on your CPU.
+    - This code also generates some plots and histograms from the simulation results.
 
 ## 2. Monthly stock data (crsp_m.csv)
 ```

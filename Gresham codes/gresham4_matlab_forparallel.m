@@ -5,7 +5,7 @@ function [pi,beta0,beta1,price]=gresham4_matlab_forparallel()
 %global s
 %rng(s)
 %randn('seed',12345678);
-Toler=1e-6;
+%Toler=1e-6;
 N0=0;
 Nsim=4000;
 Titer=Nsim + N0;
@@ -30,10 +30,10 @@ pi(1) = 0.1; r = 0.0;
 
 vp=sqrt(sigmap)*randn(Titer,1);
 vf=sqrt(sigmaf)*randn(Titer,1);
-g=sqrt(sigmab*sigmaf)/sqrt(sigmap*(1-rho^9));
-varbeta = (g*sigmap)/(sigmaf*(1-alpha)*(2 - g*(1-alpha)));
-varf = sigmaf/(1-rho^2);
-varratio = 100*(varbeta*varf)/(varf*sce^2 + sigmap);
+%g=sqrt(sigmab*sigmaf)/sqrt(sigmap*(1-rho^9));
+%varbeta = (g*sigmap)/(sigmaf*(1-alpha)*(2 - g*(1-alpha)));
+%varf = sigmaf/(1-rho^2);
+%varratio = 100*(varbeta*varf)/(varf*sce^2 + sigmap);
 %delta
 %sce
 %g
