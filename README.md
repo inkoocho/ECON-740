@@ -19,7 +19,7 @@ The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.a
     - Can be executed using the shell file `gresham4_slurm.sh`.
 
 ## 2. Duopoly codes
-The Matlab and Julia codes are based on [this paper]()
+The Matlab and Julia codes are based on [this paper](https://github.com/jay9209/ECON-777/blob/main/Duopoly%20codes/duopoly4.pdf)
 
 ## 3. Compete codes
 ```
