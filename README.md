@@ -6,7 +6,7 @@ Matlab and Julia code repositories for ECON 777 class
 The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.aeaweb.org/articles?id=10.1257/aer.20160665).
 
 - `gresham4_matlab_forparallel.m`
-    - Matlab function script that generates sample paths of $\pi$
+    - Matlab function script that generates sample paths of $\pi_t, \beta_t(0), \beta_t(1), p_t$
 
 ## 2. Monthly stock data (crsp_m.csv)
 ```
