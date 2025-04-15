@@ -22,7 +22,7 @@ The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.a
     - Can be executed using the shell file `gresham4_slurm.sh`.
 - `gresham4_julia_slurm.sh`
     - Shell file that has to be executed on the **cluster** to run `gresham4_julia_cluster.jl`
-- `gresham4_julia_gpu.sh`
+- `gresham4_julia_gpu.jl`
     - GPU execustion code of `gresham4_julia_function.jl`.
 
 ## 2. Myerson codes
@@ -62,5 +62,5 @@ The Matlab and Julia codes are based on [this paper](https://github.com/jay9209/
     - Parallel execustion code of `compete_julia_nopihat_benchmark.jl` on the **cluster**.
 - `compete_julia_slurm.sh`
     - Shell file that has to be executed on the **cluster** to run `compete_julia_pihat_cluster.jl`
-- `compete_julia_pihat_gpu.sh`
+- `compete_julia_pihat_gpu.jl`
     - GPU execustion code of `compete_julia_pihat_benchmark.jl`.
