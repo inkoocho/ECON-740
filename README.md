@@ -51,6 +51,7 @@ The Matlab and Julia codes are based on [Cho and Kasa (2017, AER)](https://www.a
 The Matlab and Julia codes are based on [this paper](https://github.com/jay9209/ECON-777/blob/main/Compete%20codes/competing13.pdf)
 - `compete_matlab_pihat_benchmark.m`
     - Local execution Matlab script of compete (pihat model) code written by Kenneth Kasa.
+
 - `compete_julia_pihat_benchmark.jl`
     - Local execution Julia script of compete (pihat model) code.
 - `compete_julia_nopihat_benchmark.jl`
