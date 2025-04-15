@@ -1,4 +1,4 @@
-# Econ 777 
+# Econ 740
 
 Matlab and Julia code repositories for ECON 777 class
 
@@ -61,3 +61,5 @@ The Matlab and Julia codes are based on [this paper](https://github.com/jay9209/
     - Parallel execustion code of `compete_julia_nopihat_benchmark.jl` on the **cluster**.
 - `compete_julia_slurm.sh`
     - Shell file that has to be executed on the **cluster** to run `compete_julia_pihat_cluster.jl`
+- `compete_julia_pihat_gpu.sh`
+    - GPU execustion code of `compete_julia_pihat_benchmark.jl`.
