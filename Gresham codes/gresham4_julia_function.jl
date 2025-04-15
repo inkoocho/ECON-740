@@ -1,5 +1,5 @@
 ##
-##    Written by Jung Jae Kim on December 29, 2023. Translated from gresham4_matlab_forparallel.m file
+##    Written by Jung Jae Kim on December 29, 2023. Translated from gresham4_matlab_function.m file
 ##
 
 function gresham4_julia_function(Titer,alpha,rho,sigmap,sigmaf,sigmab)

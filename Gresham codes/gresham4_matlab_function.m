@@ -1,4 +1,4 @@
-function [pi,beta0,beta1,price]=gresham4_matlab_forparallel()
+function [pi,beta0,beta1,price]=gresham4_matlab_function()
 %clear;
 %close all;
 %rand('seed',sum(100*clock));
