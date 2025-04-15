@@ -1,3 +1,7 @@
+##
+##    Written by Jung Jae Kim on April 5, 2025. Translated from myerson8_matlab_function.m file
+##
+
 function myerson8_julia_function(mu, sigma, Nbuyer, a, epsilon, T, CRsample)
 
     # Helper functions
