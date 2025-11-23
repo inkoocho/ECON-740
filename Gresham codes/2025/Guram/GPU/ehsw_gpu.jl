@@ -1,10 +1,3 @@
-##
-##    Written by Jung Jae Kim on March 24, 2025. GPU execution code of gresham4_julia_function.jl
-##
-
-# Maximum bound of the simulation
-# Nsim = 40000, Titer = 10000
-
 using CUDA, Random, Distributions
 
 # **Setup Parameters**

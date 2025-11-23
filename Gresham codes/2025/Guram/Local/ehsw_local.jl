@@ -1,7 +1,3 @@
-##
-##    Written by Jung Jae Kim on December 29, 2023. Parallel execution code of gresham4_julia_function.jl
-##
-
 using Distributed
 using CSV, DataFrames
 
