@@ -11,7 +11,7 @@ addprocs(SlurmManager())
     sigmab = 0.00001; 
 end
 
-simul = 5000;
+simul = 10000;
 
 results = @time @sync @distributed (vcat) for i in 1:simul
   gresham_julia_function_ehsw(Titer,alpha,rho,sigmap,sigmaf,sigmab)

@@ -19,7 +19,7 @@ gpu_uuid = CUDA.uuid(dev)
 println("Running SLURM task $task_id using GPU $gpu_uuid")
 
 # **Setup Parameters**
-Nsim = 5000  # Number of simulations
+Nsim = 10000  # Number of simulations
 Titer = 20000  # Number of time steps per simulation
 alpha = 0.96
 rho = 0.95
